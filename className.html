@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#div1{
+			width:100px;
+			height:100px;
+			border:1px solid black;
+		}
+		.box{
+			background:red;
+		}
+		.box1{
+			background:;
+		}
+	</style>
+	<script type="text/javascript">
+		function show(){
+			var oDiv=document.getElementById('div1');
+			oDiv.className='box';
+		}
+		function hide(){
+			var oDiv=document.getElementById('div1');
+			oDiv.className='box1';
+		}
+	</script>
+</head>
+<body>
+	<div id="div1" onmouseover="show()" onmouseout="hide()">
+		
+	</div>
+</body>
+</html>
